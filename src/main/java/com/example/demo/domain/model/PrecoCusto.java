@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -19,7 +20,7 @@ public class PrecoCusto {
     @Column
     private Long id;
     @Column
-    private Long valor;
+    private BigDecimal valor;
     @Column
     private StatusEnum status;
     @Column

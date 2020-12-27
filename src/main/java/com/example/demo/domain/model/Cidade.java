@@ -26,6 +26,6 @@ public class Cidade {
     private LocalDateTime dataCadastro;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "idEstadado")
-    private Estado Estado;
+    private Estado estado;
 
 }

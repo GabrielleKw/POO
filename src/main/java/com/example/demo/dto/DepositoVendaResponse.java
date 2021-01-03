@@ -8,11 +8,12 @@ import java.time.LocalDateTime;
 
 @Builder
 @Data
-public class EstadoRequest {
+public class DepositoVendaResponse {
     private Long id;
-    private String nome;
+    private Long quantidade;
+    private ProdutoResponse produto;
+    private TributacaoResponse tributacao;
+    private UnidadeMedidaResponse unidadeMedida;
     private StatusEnum status;
-    private String sigla;
-    private LocalDateTime dataCadastro;
 
 }

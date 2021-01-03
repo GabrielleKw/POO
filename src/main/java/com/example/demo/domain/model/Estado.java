@@ -22,6 +22,8 @@ public class  Estado {
     @Column
     private StatusEnum status;
     @Column
+    private String sigla;
+    @Column
     private LocalDateTime dataCadastro;
 
 }

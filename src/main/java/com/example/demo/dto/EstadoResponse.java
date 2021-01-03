@@ -8,11 +8,10 @@ import java.time.LocalDateTime;
 
 @Builder
 @Data
-public class EstadoRequest {
+public class EstadoResponse {
     private Long id;
     private String nome;
     private StatusEnum status;
     private String sigla;
-    private LocalDateTime dataCadastro;
 
 }

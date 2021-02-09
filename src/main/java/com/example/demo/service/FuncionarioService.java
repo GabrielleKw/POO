@@ -25,7 +25,7 @@ public class FuncionarioService {
         this.funcionarioResponseConverter = funcionarioResponseConverter;
     }
 
-    public FuncionarioResponse salvarFornecedor(FuncionarioRequest funcionarioRequest){
+    public FuncionarioResponse salvarFuncionario(FuncionarioRequest funcionarioRequest){
         var enderecoRequest = funcionarioRequest.getEndereco();
 
         var funcionario = Funcionario.builder()

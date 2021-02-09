@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CidadeResponseConverter {
-    public CidadeResponse fromCidade(Cidade cidade){
+    public  CidadeResponse fromCidade(Cidade cidade){
         var estado = cidade.getEstado();
         return CidadeResponse.builder()
                 .id(cidade.getId())

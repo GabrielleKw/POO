@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DepositoVendaResponseConverter {
-    public DepositoVendaResponse fromDepositoVendaResponse(DepositoVenda depositoVenda){
+    public DepositoVendaResponse fromDepositoVenda(DepositoVenda depositoVenda){
         var produto = depositoVenda.getProduto();
         var tributacao = depositoVenda.getTributacao();
         var unidadeMedida = depositoVenda.getUnidadeMedida();

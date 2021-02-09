@@ -30,7 +30,7 @@ public class Cliente {
     private StatusEnum status;
     @Column
     private LocalDateTime dataCadastro;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "idEndereco")
     private Endereco endereco;
 

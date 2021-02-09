@@ -21,7 +21,7 @@ public class Cidade {
     private StatusEnum status;
     @Column
     private LocalDateTime dataCadastro;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "idEstadado")
     private Estado estado;
 

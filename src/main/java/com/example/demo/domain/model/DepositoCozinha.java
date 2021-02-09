@@ -24,13 +24,13 @@ public class DepositoCozinha {
     private StatusEnum status;
     @Column
     private LocalDateTime dataCadastro;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "idProduto")
     private Produto produto;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "idTributacao")
     private Tributacao tributacao;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "idUnidadeMedida")
     private UnidadeMedida unidadeMedida;
 

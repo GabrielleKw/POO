@@ -9,6 +9,8 @@ public class UnidadeMedidaResponseConverter {
                 .id(unidadeMedida.getId())
                 .abreviacao(unidadeMedida.getAbreviacao())
                 .nome(unidadeMedida.getNome())
+                .status(unidadeMedida.getStatus())
+                .dataCadastro(unidadeMedida.getDataCadastro())
                 .build();
     }
 }

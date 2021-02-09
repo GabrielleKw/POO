@@ -13,5 +13,6 @@ public class UnidadeMedidaResponse {
     private String nome;
     private String abreviacao;
     private StatusEnum status;
+    private LocalDateTime dataCadastro;
 
 }

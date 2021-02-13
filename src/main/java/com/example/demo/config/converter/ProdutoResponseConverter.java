@@ -2,7 +2,9 @@ package com.example.demo.config.converter;
 
 import com.example.demo.domain.model.Produto;
 import com.example.demo.dto.*;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProdutoResponseConverter {
     public ProdutoResponse fromProduto(Produto produto){
         var tributacao = produto.getTributacao();

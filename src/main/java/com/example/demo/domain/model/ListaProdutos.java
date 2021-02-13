@@ -36,5 +36,8 @@ public class ListaProdutos {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "idPrecoCusto")
     private PrecoCusto precoCusto;
+    @ManyToOne
+    @JoinColumn(name = "idPrecoVenda")
+    private PrecoVenda precoVenda;
 
 }

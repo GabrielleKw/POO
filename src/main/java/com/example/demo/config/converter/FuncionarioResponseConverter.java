@@ -3,7 +3,9 @@ package com.example.demo.config.converter;
 import com.example.demo.domain.model.Fornecedor;
 import com.example.demo.domain.model.Funcionario;
 import com.example.demo.dto.*;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FuncionarioResponseConverter {
     public FuncionarioResponse fromFuncionario(Funcionario funcionario){
         var endereco = funcionario.getEndereco();

@@ -4,7 +4,9 @@ import com.example.demo.domain.model.PrecoVenda;
 import com.example.demo.dto.PrecoCustoResponse;
 import com.example.demo.dto.PrecoVendaResponse;
 import com.example.demo.dto.ProdutoResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PrecoVendaResponseConverter {
     public PrecoVendaResponse fromPrecoVenda(PrecoVenda precoVenda ){
         var produto = precoVenda.getProduto();

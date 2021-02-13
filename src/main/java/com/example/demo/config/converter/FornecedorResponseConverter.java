@@ -5,7 +5,9 @@ import com.example.demo.dto.CidadeResponse;
 import com.example.demo.dto.EnderecoResponse;
 import com.example.demo.dto.EstadoResponse;
 import com.example.demo.dto.FornecedorResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FornecedorResponseConverter {
     public FornecedorResponse fromFornecedor(Fornecedor fornecedor){
         var endereco = fornecedor.getEndereco();

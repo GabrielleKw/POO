@@ -5,7 +5,9 @@ import com.example.demo.dto.ClienteResponse;
 import com.example.demo.dto.FuncionarioResponse;
 import com.example.demo.dto.PagamentoResponse;
 import com.example.demo.dto.VendaFinalResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class VendaFinalResponseConverter {
     public VendaFinalResponse fromVendaFinal(VendaFinal vendaFinal){
         var pagamento = vendaFinal.getPagamento();

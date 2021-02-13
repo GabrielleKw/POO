@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:2345", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3306", maxAge = 3600)
 @RestController
 public class EstadoApi {
     private final EstadoService estadoService;
